@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mehajabin Khan Ahona – CSE Student &amp; Software Developer</title>
+<meta name="description" content="Portfolio of Mehajabin Khan Ahona, a Computer Science and Engineering student building web apps with Django, Python and Flutter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e8f6ff;--surface:#ffffff;--ink:#0b1f4d;--muted:#46598a;--bd:#0b1f4d;--sky:#00a3e0;--sky-ink:#0b1f4d;--pink:#ffc2dd;--yellow:#ffd84d;--mint:#b9f3dc;--dot:#c5e6f7;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1330;--surface:#131f4a;--ink:#eaf4ff;--muted:#a3b6dd;--bd:#5fd0ff;--pink:#7a2f58;--mint:#1c5a49;--dot:#14224f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1330;--surface:#131f4a;--ink:#eaf4ff;--muted:#a3b6dd;--bd:#5fd0ff;--pink:#7a2f58;--mint:#1c5a49;--dot:#14224f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px;background-color:var(--bg)}
+#net{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+button{font:inherit;cursor:pointer;color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+.px{image-rendering:pixelated;display:block;max-width:100%;height:auto}
+.pf{font-family:"Press Start 2P",ui-monospace,Menlo,monospace}
+header.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:20px 0}
+.logo{display:flex;align-items:center;gap:10px;font-size:.7rem;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+nav a{text-decoration:none;font-weight:700;font-size:.92rem;padding:4px 10px;border-radius:8px}
+nav a:hover{background:var(--yellow);color:#0b1f4d}
+.tog{border:3px solid var(--bd);background:var(--surface);border-radius:10px;padding:3px 12px;font-weight:700;box-shadow:3px 3px 0 var(--bd)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:44px 0 36px}
+.hi{display:inline-block;background:var(--yellow);color:#0b1f4d;border:3px solid var(--bd);border-radius:999px;padding:2px 14px;font-weight:900;font-size:.9rem;margin-bottom:16px}
+h1{font-size:clamp(2.4rem,7.2vw,4.3rem);line-height:1.02;font-weight:900;letter-spacing:-.02em;margin:0 0 10px}
+.sub{font-weight:800;color:var(--sky);margin:0 0 16px;font-size:1.02rem}
+:root[data-theme="light"] .sub,:root:not([data-theme]) .sub{color:#0077a8}
+.role{font-size:1.3rem;font-weight:800;color:var(--ink);min-height:3.8em;margin:0 0 10px;max-width:30ch}
+.role b{font-weight:800}
+.cur{display:inline-block;width:.6ch;height:1.05em;background:var(--sky);vertical-align:-.15em;margin-left:2px;animation:blink 1s steps(1) infinite}
+.lead{max-width:52ch;color:var(--muted);margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;font-weight:900;padding:10px 20px;border:3px solid var(--bd);border-radius:12px;background:var(--surface);box-shadow:5px 5px 0 var(--bd);transition:transform .12s,box-shadow .12s}
+.btn.p{background:var(--sky);color:var(--sky-ink)}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--bd)}
+.btn:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--bd)}
+.win{border:3px solid var(--bd);border-radius:14px;background:var(--surface);box-shadow:8px 8px 0 var(--bd);overflow:hidden}
+.bar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--sky);color:#0b1f4d;border-bottom:3px solid var(--bd);font-size:.55rem}
+.bar i{width:10px;height:10px;background:#fff;border:2px solid #0b1f4d;border-radius:2px}
+.bar span{margin-left:6px}
+.stage{position:relative;padding:26px 16px 18px;background:linear-gradient(#bfe8ff,#e9f8ff);display:flex;justify-content:center;min-height:300px}
+:root[data-theme="dark"] .stage{background:linear-gradient(#10265e,#1a3a86)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stage{background:linear-gradient(#10265e,#1a3a86)}}
+.avatar{animation:bob 2.4s ease-in-out infinite;cursor:pointer;width:192px}
+.avbtn{background:none;border:0;padding:0}
+.bubble{position:absolute;top:14px;left:50%;transform:translateX(-50%);background:#fff;color:#0b1f4d;border:3px solid #0b1f4d;border-radius:12px;padding:4px 12px;font-weight:900;font-size:.85rem;width:max-content;max-width:86%;text-align:center}
+.f1,.f2,.f3,.f4,.sigw{position:absolute}
+.f1{top:48px;left:14%;animation:tw 1.6s steps(2) infinite}.f2{top:90px;right:12%;animation:tw 1.3s steps(2) infinite .4s}.f3{bottom:90px;left:9%;animation:tw 1.9s steps(2) infinite .8s}
+.f4{top:150px;right:9%;animation:bob 2s ease-in-out infinite}
+.sigw{bottom:16px;right:16px}
+.ca,.cb,.cc,.cd{animation:sig 2s steps(1) infinite;opacity:.25}
+.cd{animation-delay:0s}.cc{animation-delay:.25s}.cb{animation-delay:.5s}.ca{animation-delay:.75s}
+.ce{transform-box:fill-box;transform-origin:center;animation:eye 4s infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes blink{50%{opacity:0}}
+@keyframes tw{50%{opacity:.2;transform:scale(.7)}}
+@keyframes sig{0%{opacity:.25}25%,100%{opacity:1}}
+@keyframes eye{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+@keyframes run{to{transform:translateX(-50%)}}
+.rib{overflow:hidden;border-block:3px solid var(--bd);background:var(--yellow);color:#0b1f4d;margin:10px 0 0}
+.rib div{display:flex;width:max-content;animation:run 28s linear infinite}
+.rib span{padding:8px 18px;font-size:.6rem;white-space:nowrap}
+section{padding:44px 0 8px}
+h2{display:flex;align-items:center;gap:12px;font-size:.95rem;line-height:1.5;margin:0 0 24px;font-family:"Press Start 2P",ui-monospace,Menlo,monospace;font-weight:400}
+.card,.proj{background:var(--surface);border:3px solid var(--bd);border-radius:14px;padding:22px;margin-bottom:20px;box-shadow:6px 6px 0 var(--bd)}
+.proj[hidden]{display:none}
+.proj h3,.card h3{margin:0 0 6px;font-size:1.25rem}
+.proj p,.card p{margin:6px 0;color:var(--muted);max-width:64ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.tags span{font-size:.85rem;font-weight:700;padding:2px 12px;border:2px solid var(--bd);border-radius:999px;background:var(--mint);color:var(--ink);cursor:pointer}
+.tags span:hover,.tags span.on{background:var(--yellow);color:#0b1f4d}
+.card .tags span{cursor:default}.card .tags span:hover{background:var(--mint);color:var(--ink)}.links{margin-top:12px}.links a{margin-right:18px;font-weight:900;color:var(--sky)}
+.proj details{margin-top:12px}.proj summary{cursor:pointer;font-weight:900}
+.proj details ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{border:3px solid var(--bd);background:var(--surface);border-radius:999px;padding:3px 14px;font-weight:700;font-size:.9rem}
+.chip[aria-pressed="true"]{background:var(--sky);color:#0b1f4d}
+.count{color:var(--muted);font-weight:700;font-size:.9rem;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.grid .card{margin:0}
+.when{display:inline-block;background:var(--pink);color:var(--ink);border:2px solid var(--bd);border-radius:8px;padding:0 10px;font-size:.85rem;font-weight:900;margin-bottom:8px}
+.card ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.list{margin:0;padding-left:20px;color:var(--muted)}.list li{margin-bottom:8px}.list b{color:var(--ink)}
+footer{padding:48px 0 70px}
+footer p{color:var(--muted);max-width:60ch}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.stage{min-height:280px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.ca,.cb,.cc,.cd{opacity:1}}
+</style>
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="wrap">
+<header class="top"><a class="logo pf" href="#top"><svg class="px sig" viewBox="0 0 7 7" width="21" height="21" shape-rendering="crispEdges" aria-hidden="true"><rect x="6" y="0" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="6" y="1" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="4" y="2" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="2" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="4" y="3" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="3" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="2" y="4" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="4" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="4" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="2" y="5" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="5" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="5" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="0" y="6" width="1" height="1" fill="#00a3e0" class="cd"/><rect x="2" y="6" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="6" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="6" width="1" height="1" fill="#00a3e0" class="ca"/></svg><span>MEHAJABIN KHAN AHONA</span></a>
+<nav><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#lead">Leadership</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="tog" id="tog" type="button" aria-label="Switch light or dark theme">Theme</button></nav></header>
+
+<main id="top">
+<div class="hero">
+<div>
+<span class="hi">open to full-time roles</span>
+<h1>Mehajabin Khan Ahona</h1>
+<p class="sub">CSE student · Django &amp; Flutter developer · Network &amp; IT support</p>
+<p class="role" aria-label="Hi, it’s me, Ahona! I’m so excited to show you my work."><b id="typed">Hi, it’s me, Ahona! I’m so excited to show you my work.</b><span class="cur" aria-hidden="true"></span></p>
+<p class="lead">Final-stretch Computer Science and Engineering student at IUBAT in Dhaka. I’ve built an internal IT ticketing system at AKASH Digital TV, a streaming app prototype and an e-commerce site. I’m looking for a full-time professional role in software development or IT and network infrastructure.</p>
+<div class="btns">
+<a class="btn p" href="mailto:ahonakhan735@gmail.com">Email me</a>
+<a class="btn" href="CV_Mehajabin_Khan.pdf" download>Download CV</a>
+<a class="btn" href="https://www.linkedin.com/in/mehajabinkhanahona">LinkedIn</a>
+</div></div>
+<div class="win"><div class="bar pf"><i></i><i></i><i></i><span>mehajabin.exe</span></div>
+<div class="stage">
+<div class="bubble" id="bub" aria-live="polite">Hi, it’s me, Ahona!</div>
+<span class="f1"><svg class="px f1" viewBox="0 0 5 5" width="25" height="25" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg></span><span class="f2"><svg class="px f2" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffffff"/><rect x="1" y="1" width="3" height="1" fill="#ffffff"/><rect x="0" y="2" width="5" height="1" fill="#ffffff"/><rect x="1" y="3" width="3" height="1" fill="#ffffff"/><rect x="2" y="4" width="1" height="1" fill="#ffffff"/></svg></span><span class="f3"><svg class="px f3" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="1" y="1" width="3" height="1" fill="#ff7eb6"/><rect x="0" y="2" width="5" height="1" fill="#ff7eb6"/><rect x="1" y="3" width="3" height="1" fill="#ff7eb6"/><rect x="2" y="4" width="1" height="1" fill="#ff7eb6"/></svg></span><span class="f4"><svg class="px f4" viewBox="0 0 5 5" width="25" height="25" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="3" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="0" y="1" width="5" height="1" fill="#ff7eb6"/><rect x="0" y="2" width="5" height="1" fill="#ff7eb6"/><rect x="1" y="3" width="3" height="1" fill="#ff7eb6"/><rect x="2" y="4" width="1" height="1" fill="#ff7eb6"/></svg></span>
+<button class="avbtn" id="av" type="button" aria-label="Say hi to Mehajabin" style="margin-top:34px"><svg class="px avatar" viewBox="0 0 16 16" width="192" height="192" shape-rendering="crispEdges" role="img" aria-label="Pixel art portrait of Mehajabin with long dark hair, a navy blazer and a white turtleneck"><rect x="4" y="0" width="8" height="1" fill="#2b1a33"/><rect x="3" y="1" width="10" height="1" fill="#2b1a33"/><rect x="2" y="2" width="12" height="1" fill="#2b1a33"/><rect x="2" y="3" width="2" height="1" fill="#2b1a33"/><rect x="4" y="3" width="8" height="1" fill="#f6cfae"/><rect x="12" y="3" width="2" height="1" fill="#2b1a33"/><rect x="2" y="4" width="2" height="1" fill="#2b1a33"/><rect x="4" y="4" width="8" height="1" fill="#f6cfae"/><rect x="12" y="4" width="2" height="1" fill="#2b1a33"/><rect x="2" y="5" width="2" height="1" fill="#2b1a33"/><rect x="4" y="5" width="1" height="1" fill="#f6cfae"/><rect x="5" y="5" width="2" height="1" fill="#1b1b2f" class="ce"/><rect x="7" y="5" width="2" height="1" fill="#f6cfae"/><rect x="9" y="5" width="2" height="1" fill="#1b1b2f" class="ce"/><rect x="11" y="5" width="1" height="1" fill="#f6cfae"/><rect x="12" y="5" width="2" height="1" fill="#2b1a33"/><rect x="2" y="6" width="2" height="1" fill="#2b1a33"/><rect x="4" y="6" width="8" height="1" fill="#f6cfae"/><rect x="12" y="6" width="2" height="1" fill="#2b1a33"/><rect x="2" y="7" width="2" height="1" fill="#2b1a33"/><rect x="4" y="7" width="1" height="1" fill="#f6cfae"/><rect x="5" y="7" width="1" height="1" fill="#ff9ec7"/><rect x="6" y="7" width="1" height="1" fill="#f6cfae"/><rect x="7" y="7" width="2" height="1" fill="#d9534f"/><rect x="9" y="7" width="1" height="1" fill="#f6cfae"/><rect x="10" y="7" width="1" height="1" fill="#ff9ec7"/><rect x="11" y="7" width="1" height="1" fill="#f6cfae"/><rect x="12" y="7" width="2" height="1" fill="#2b1a33"/><rect x="2" y="8" width="2" height="1" fill="#2b1a33"/><rect x="4" y="8" width="8" height="1" fill="#f6cfae"/><rect x="12" y="8" width="2" height="1" fill="#2b1a33"/><rect x="3" y="9" width="2" height="1" fill="#2b1a33"/><rect x="5" y="9" width="6" height="1" fill="#f6cfae"/><rect x="11" y="9" width="2" height="1" fill="#2b1a33"/><rect x="3" y="10" width="3" height="1" fill="#2b1a33"/><rect x="6" y="10" width="4" height="1" fill="#ffffff"/><rect x="10" y="10" width="3" height="1" fill="#2b1a33"/><rect x="4" y="11" width="2" height="1" fill="#14275e"/><rect x="6" y="11" width="4" height="1" fill="#ffffff"/><rect x="10" y="11" width="2" height="1" fill="#14275e"/><rect x="3" y="12" width="3" height="1" fill="#14275e"/><rect x="6" y="12" width="4" height="1" fill="#ffffff"/><rect x="10" y="12" width="3" height="1" fill="#14275e"/><rect x="2" y="13" width="5" height="1" fill="#14275e"/><rect x="7" y="13" width="2" height="1" fill="#ffffff"/><rect x="9" y="13" width="5" height="1" fill="#14275e"/><rect x="2" y="14" width="12" height="1" fill="#14275e"/><rect x="2" y="15" width="12" height="1" fill="#14275e"/></svg></button>
+<span class="sigw"><svg class="px sig" viewBox="0 0 7 7" width="42" height="42" shape-rendering="crispEdges" aria-hidden="true"><rect x="6" y="0" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="6" y="1" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="4" y="2" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="2" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="4" y="3" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="3" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="2" y="4" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="4" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="4" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="2" y="5" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="5" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="5" width="1" height="1" fill="#00a3e0" class="ca"/><rect x="0" y="6" width="1" height="1" fill="#00a3e0" class="cd"/><rect x="2" y="6" width="1" height="1" fill="#00a3e0" class="cc"/><rect x="4" y="6" width="1" height="1" fill="#00a3e0" class="cb"/><rect x="6" y="6" width="1" height="1" fill="#00a3e0" class="ca"/></svg></span>
+</div></div>
+</div>
+
+<div class="rib pf" aria-hidden="true"><div>
+<span>PYTHON ★ DJANGO ★ FLUTTER ★ DART ★ KOTLIN ★ JAVASCRIPT ★ SQL ★ NETWORKING ★ ML ★ </span><span>PYTHON ★ DJANGO ★ FLUTTER ★ DART ★ KOTLIN ★ JAVASCRIPT ★ SQL ★ NETWORKING ★ ML ★ </span>
+</div></div>
+
+<section id="experience"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg> Work experience</h2>
+<div class="card"><span class="when">Internship</span><h3>Technology Intern, Network &amp; Infrastructure Department</h3><p><b>Beximco Communications Ltd. (AKASH Digital TV)</b></p>
+<ul><li><b>IT operations:</b> supported day-to-day IT operations and technical troubleshooting in a broadcast and telecommunications environment.</li>
+<li><b>Networking and hardware:</b> helped diagnose and resolve hardware, software, and network-related issues.</li>
+<li><b>Digital workplace:</b> worked with Microsoft 365 applications, administrative tools, and digital workplace solutions.</li>
+<li><b>Software:</b> helped build an internal IT Support Ticket Management System with Django, Python, and SQLite.</li></ul>
+<div class="tags"><span>Networking</span><span>IT support</span><span>Troubleshooting</span><span>Microsoft 365</span><span>Django</span></div></div>
+</section>
+
+<section id="work"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg> Projects</h2>
+<div class="filters" id="filters" role="group" aria-label="Filter projects by technology"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<article class="proj"><h3>IT Support Ticket Management System</h3>
+<p>An internal platform for employees at AKASH Digital TV to submit IT support requests, track issues, and manage them as an administrator. Built during my internship.</p>
+<div class="tags"><span>Python</span><span>Django</span><span>SQLite</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+<details><summary>More about this project</summary><ul><li>Built for employees to raise IT support requests.</li><li>Includes issue tracking and an administrator side.</li><li>Made during my internship at AKASH Digital TV.</li></ul></details></article>
+<article class="proj"><h3>AKASH GO 2: digital streaming platform</h3>
+<p>A cross-platform streaming prototype with Live TV and on-demand content.</p>
+<div class="tags"><span>Flutter</span><span>Dart</span><span>Python</span><span>Django</span></div>
+<div class="links"><a href="https://deft-nasturtium-ab7af9.netlify.app/">Live demo</a></div>
+<details><summary>More about this project</summary><ul><li>Prototype with Live TV and on-demand sections.</li><li>Flutter and Dart for the cross-platform app, Django for the backend.</li></ul></details></article>
+<article class="proj"><h3>E-commerce system</h3>
+<p>A shop with product listings, a shopping cart, user accounts, and order management.</p>
+<div class="tags"><span>Python</span><span>Django</span><span>MySQL</span></div>
+<details><summary>More about this project</summary><ul><li>Product management, shopping cart, user accounts and order management.</li></ul></details></article>
+<article class="proj"><h3>Cosmic Canvas</h3>
+<p>An interactive game that runs in the browser.</p>
+<div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+<div class="links"><a href="https://cerulean-pegasus-ff36f8.netlify.app/">Play it</a></div>
+<details><summary>More about this project</summary><ul><li>Runs fully in the browser, no install needed.</li></ul></details></article>
+</section>
+
+<section id="lead"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="3" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="0" y="1" width="5" height="1" fill="#ff7eb6"/><rect x="0" y="2" width="5" height="1" fill="#ff7eb6"/><rect x="1" y="3" width="3" height="1" fill="#ff7eb6"/><rect x="2" y="4" width="1" height="1" fill="#ff7eb6"/></svg> Leadership</h2>
+<div class="grid">
+<div class="card"><h3>Campus Ambassador</h3><p>Infinix Mobile</p></div>
+<div class="card"><h3>Student Ambassador</h3><p>IUBAT</p></div>
+<div class="card"><h3>Event Organizer</h3><p>IIEC</p></div>
+</div></section>
+
+<section id="education"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg> Education</h2>
+<div class="grid">
+<div class="card"><span class="when">2023 – Present</span><h3>B.Sc. in CSE</h3><p>International University of Business Agriculture and Technology (IUBAT). CGPA 3.6 out of 4.00.</p></div>
+<div class="card"><span class="when">2021 – 2022</span><h3>H.S.C.</h3><p>Dhaka City College. GPA 5.00 out of 5.00.</p></div>
+<div class="card"><span class="when">2019 – 2020</span><h3>S.S.C.</h3><p>BPATC School and College. GPA 5.00 out of 5.00.</p></div>
+</div></section>
+
+<section id="research"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg> Research</h2>
+<div class="card"><ul class="list">
+<li><b>HybridCNN-XGBoost approach</b> for automated classification of contagious and non-contagious skin diseases.</li>
+<li><b>Explainable multi-class Alzheimer’s disease classification</b> from brain MRI using transfer learning.</li>
+</ul></div></section>
+
+<section id="skills"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="#ffd84d"/><rect x="1" y="1" width="3" height="1" fill="#ffd84d"/><rect x="0" y="2" width="5" height="1" fill="#ffd84d"/><rect x="1" y="3" width="3" height="1" fill="#ffd84d"/><rect x="2" y="4" width="1" height="1" fill="#ffd84d"/></svg> Skills &amp; training</h2>
+<div class="grid">
+<div class="card"><h3>Languages</h3><p>Python, JavaScript, Dart, Kotlin, HTML, CSS, SQL</p></div>
+<div class="card"><h3>Frameworks &amp; tools</h3><p>Django, Flutter, MySQL, SQLite, Microsoft 365</p></div>
+<div class="card"><h3>Networking &amp; IT infrastructure</h3><p>Computer networking, network and hardware troubleshooting, IT support operations, Microsoft 365 and administrative tools</p></div>
+<div class="card"><h3>Data &amp; AI</h3><p>Data analysis, machine learning basics, transfer learning research</p></div>
+</div>
+<div class="card" style="margin-top:20px"><ul class="list">
+<li><b>Artificial Intelligence &amp; Machine Learning</b>, GP Academy, Grameenphone</li>
+<li><b>Data Analysis</b>, GP Academy, Grameenphone</li>
+<li><b>App Development with Kotlin</b>, Creative IT Institute</li>
+</ul></div></section>
+
+</main>
+
+<footer id="contact"><h2><svg class="px h" viewBox="0 0 5 5" width="15" height="15" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="3" y="0" width="1" height="1" fill="#ff7eb6"/><rect x="0" y="1" width="5" height="1" fill="#ff7eb6"/><rect x="0" y="2" width="5" height="1" fill="#ff7eb6"/><rect x="1" y="3" width="3" height="1" fill="#ff7eb6"/><rect x="2" y="4" width="1" height="1" fill="#ff7eb6"/></svg> Let’s talk</h2>
+<p>I’m open to full-time professional roles in software, IT and network infrastructure, and happy to do a call or a coding task. Reach me at <a href="mailto:ahonakhan735@gmail.com"><b>ahonakhan735@gmail.com</b></a> or on <a href="https://www.linkedin.com/in/mehajabinkhanahona"><b>LinkedIn</b></a>.</p>
+<p><button class="chip" id="copy" type="button">Copy email address</button> <span id="copied" aria-live="polite" style="color:var(--muted)"></span></p>
+</footer>
+</div>
+<script>
+(function(){
+var root=document.documentElement,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t);}catch(e){}
+document.getElementById('tog').onclick=function(){var d=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);var n=d?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}};
+
+var roles=['Hi, it’s me, Ahona! I’m so excited to show you my work.','I build apps with Django, Flutter and Python.','I’ve worked inside real telecom IT and network teams.','I’m ready for my first full-time role. Let’s talk!'],ri=0,ci=0,del=false,el=document.getElementById('typed');
+if(!rm){el.textContent='';(function tick(){var w=roles[ri];ci+=del?-1:1;el.textContent=w.slice(0,ci);var s=del?20:55;
+if(!del&&ci===w.length){del=true;s=2200}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;s=300}setTimeout(tick,s)})();}
+
+var lines=['Hi, it’s me, Ahona!','Welcome to my portfolio!','I’m so excited to meet you!','Psst, click a tech tag below','Let’s build something great!'],li=0,bub=document.getElementById('bub'),av=document.getElementById('av');
+if(!rm){setInterval(function(){li=(li+1)%lines.length;bub.textContent=lines[li]},3500)}
+av.onclick=function(){li=(li+1)%lines.length;bub.textContent=lines[li];if(!rm){av.animate([{transform:'translateY(0)'},{transform:'translateY(-22px)'},{transform:'translateY(0)'}],{duration:350})}};
+
+var projs=[].slice.call(document.querySelectorAll('.proj')),all={};
+projs.forEach(function(p){p._t=[].map.call(p.querySelectorAll('.tags span'),function(x){return x.textContent});p._t.forEach(function(x){all[x]=(all[x]||0)+1})});
+var fb=document.getElementById('filters'),count=document.getElementById('count'),cur='All';
+function mk(n){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=n;b.setAttribute('aria-pressed',n===cur);b.onclick=function(){apply(n)};return b}
+function render(){fb.innerHTML='';fb.appendChild(mk('All'));Object.keys(all).filter(function(k){return all[k]>1}).forEach(function(k){fb.appendChild(mk(k))})}
+function apply(n){cur=n;var c=0;projs.forEach(function(p){var s=n==='All'||p._t.indexOf(n)>-1;p.hidden=!s;if(s)c++;[].forEach.call(p.querySelectorAll('.tags span'),function(x){x.classList.toggle('on',x.textContent===n)})});
+render();count.textContent=n==='All'?'Tip: click any technology tag to filter the projects.':c+' of '+projs.length+' projects use '+n+'.'}
+projs.forEach(function(p){[].forEach.call(p.querySelectorAll('.tags span'),function(x){x.onclick=function(){apply(cur===x.textContent?'All':x.textContent)}})});
+apply('All');
+
+document.getElementById('copy').onclick=function(){var m='ahonakhan735@gmail.com',o=document.getElementById('copied');
+if(navigator.clipboard){navigator.clipboard.writeText(m).then(function(){o.textContent='Copied!'},function(){o.textContent=m})}else{o.textContent=m}};
+/* network background */
+var cv=document.getElementById('net'),cx=cv.getContext('2d'),W=0,H=0,dpr=1,nodes=[],pk=[],mx=-999,my=-999,col={l:'0,163,224',n:'11,31,77',a:'255,216,77'};
+function colors(){var d=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+col=d?{l:'95,208,255',n:'190,230,255',a:'255,216,77',d:1}:{l:'0,163,224',n:'11,31,77',a:'255,170,0',d:0}}
+function size(){dpr=Math.min(window.devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);
+var n=Math.max(18,Math.min(70,Math.floor(W*H/20000)));nodes=[];for(var i=0;i<n;i++){nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,big:i%9===0})}pk=[]}
+var D=150;
+function draw(){cx.clearRect(0,0,W,H);var a,b,i,j,dx,dy,d;
+for(i=0;i<nodes.length;i++){a=nodes[i];for(j=i+1;j<nodes.length;j++){b=nodes[j];dx=a.x-b.x;dy=a.y-b.y;d=Math.sqrt(dx*dx+dy*dy);
+if(d<D){cx.strokeStyle='rgba('+col.l+','+((1-d/D)*(col.d?.45:.5))+')';cx.lineWidth=1.5;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+dx=a.x-mx;dy=a.y-my;d=Math.sqrt(dx*dx+dy*dy);if(d<170){cx.strokeStyle='rgba('+col.a+','+(1-d/170)*.9+')';cx.lineWidth=2;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(mx,my);cx.stroke()}}
+for(i=0;i<nodes.length;i++){a=nodes[i];if(a.big){cx.fillStyle='rgba('+col.l+',.9)';cx.fillRect(a.x-5,a.y-5,10,10);cx.strokeStyle='rgba('+col.l+',.5)';cx.lineWidth=2;cx.strokeRect(a.x-9,a.y-9,18,18)}
+else{cx.fillStyle='rgba('+col.n+',.55)';cx.fillRect(a.x-2,a.y-2,4,4)}}
+for(i=0;i<pk.length;i++){var p=pk[i];cx.fillStyle='rgb('+col.a+')';cx.fillRect(p.a.x+(p.b.x-p.a.x)*p.t-3,p.a.y+(p.b.y-p.a.y)*p.t-3,6,6)}}
+function step(){var i,a;for(i=0;i<nodes.length;i++){a=nodes[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1}
+for(i=pk.length-1;i>=0;i--){pk[i].t+=.02;if(pk[i].t>=1)pk.splice(i,1)}
+if(pk.length<7&&Math.random()<.04){var x=nodes[Math.floor(Math.random()*nodes.length)],y=nodes[Math.floor(Math.random()*nodes.length)],dx=x.x-y.x,dy=x.y-y.y;if(x!==y&&dx*dx+dy*dy<D*D)pk.push({a:x,b:y,t:0})}}
+function loop(){step();draw();requestAnimationFrame(loop)}
+colors();size();
+addEventListener('resize',function(){size();if(rm)draw()});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){colors();if(rm)draw()});
+document.getElementById('tog').addEventListener('click',function(){colors();if(rm)draw()});
+if(rm){draw()}else{addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY});addEventListener('pointerleave',function(){mx=my=-999});loop()}
+})();
+</script>
+</body>
+</html>
